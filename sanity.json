@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "project": {
+    "name": "bygg21-api"
+  },
+  "api": {
+    "projectId": "q2a6l50y",
+    "dataset": "metier-test"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "@sanity/google-maps-input"
+  ],
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    }
+  ]
+}
