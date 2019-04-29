@@ -9,7 +9,7 @@ This repo contains Sanity Studio and Schemas for Bygg 21 API.
 - Install dependencies: `npm i`
 - Run Sanity studio: `sanity start`
 
-Remember to delpoy changes to Studio after changes to schemas or plugins. Run `sanity deploy`.
+Remember to deploy changes to Studio after changes to schemas or plugins. Run `sanity deploy`.
 
 ## Sanity
 
@@ -22,8 +22,8 @@ https://bygg21-api.sanity.studio
 Project ID:<br>
 q2a6l50y
 
-API endpoint example:<br>
-https://q2a6l50y.api.sanity.io/v1/data/query/metier-test?query=*[0]
+API endpoint with query - example:<br>
+https://q2a6l50y.api.sanity.io/v1/data/query/metier-test?query=*[_type=="movie"]{title}
 
-How to: Queries:<br>
+How to GRQO queries:<br>
 https://www.sanity.io/docs/http-api/http-query
