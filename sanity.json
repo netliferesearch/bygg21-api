@@ -5,17 +5,9 @@
   },
   "api": {
     "projectId": "q2a6l50y",
-    "dataset": "metier-test"
+    "dataset": "metier"
   },
-  "plugins": [
-    "@sanity/base",
-    "@sanity/components",
-    "@sanity/default-layout",
-    "@sanity/default-login",
-    "@sanity/desk-tool",
-    "@sanity/google-maps-input",
-    "@sanity/vision"
-  ],
+  "plugins": ["@sanity/base", "@sanity/components", "@sanity/default-layout", "@sanity/default-login", "@sanity/desk-tool", "@sanity/google-maps-input", "@sanity/vision"],
   "parts": [
     {
       "name": "part:@sanity/base/schema",
