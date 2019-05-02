@@ -1,6 +1,6 @@
 export default {
   name: 'nextStep',
-  title: 'Neste steg',
+  title: 'Neste steg API',
   type: 'document',
   fields: [
     // DOCUMENT META
