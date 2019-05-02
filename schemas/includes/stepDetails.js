@@ -4,17 +4,17 @@ export default {
   type: 'object',
   fields: [
     {
-      name: 'stepNumber',
+      name: 'number',
       title: 'Nummer på steget',
       type: 'number',
     },
     {
-      name: 'stepTitle',
+      name: 'title',
       title: 'Navn på steget',
       type: 'string',
     },
     {
-      name: 'stepDescription',
+      name: 'description',
       title: 'Formål med steget',
       type: 'text',
     },

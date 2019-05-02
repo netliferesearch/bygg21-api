@@ -23,7 +23,7 @@ export default {
           fields: [
             // STEP DETAILS
             {
-              name: 'stepDetails',
+              name: 'details',
               title: 'Beskrivelse av steg',
               type: 'stepDetails',
             },
@@ -39,16 +39,16 @@ export default {
             // MEETINGS
             {
               name: 'meetings',
-              title: 'Er det krav om møte etter leveransen?',
-              description: 'Feks oppstartsmøte mellom steg 1 og 2',
+              title: 'Er det et møte etter leveransen?',
+              description: 'Feks "Oppstartsmøte" mellom steg 1 og 2',
               type: 'array',
               of: [{ type: 'meeting' }],
             },
           ],
           preview: {
             select: {
-              title: 'stepDetails.stepNumber',
-              subtitle: 'stepDetails.stepTitle',
+              title: 'details.number',
+              subtitle: 'details.title',
             },
             prepare(selection) {
               const { title, subtitle } = selection;

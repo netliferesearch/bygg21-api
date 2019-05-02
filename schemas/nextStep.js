@@ -54,8 +54,8 @@ export default {
           ],
           preview: {
             select: {
-              title: 'stepDetails.stepNumber',
-              subtitle: 'stepDetails.stepTitle',
+              title: 'details.number',
+              subtitle: 'details.title',
             },
             prepare(selection) {
               const { title, subtitle } = selection;
