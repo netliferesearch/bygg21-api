@@ -22,8 +22,13 @@ https://bygg21-api.sanity.studio
 Project ID:<br>
 q2a6l50y
 
-API endpoint with query - example:<br>
-https://q2a6l50y.api.sanity.io/v1/data/query/metier-test?query=*[_type=="movie"]{title}
+## Query examples
+
+Get all data about "Neste steg":
+https://q2a6l50y.api.sanity.io/v1/data/query/metier-test?query=*[_type=="nextStep"]
+
+Get all data about "Neste steg", but limit to Step info (number, title and description):
+https://q2a6l50y.api.sanity.io/v1/data/query/metier-test?query=*[_type=="nextStep"]{step[]{stepNumber,stepTitle, stepDescription}}
 
 How to GRQO queries:<br>
 https://www.sanity.io/docs/http-api/http-query
