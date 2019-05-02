@@ -4,15 +4,18 @@ import createSchema from 'part:@sanity/base/schema-creator';
 import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 // We import object and document schemas
+import nextStep from './nextStep';
+
+// TODO: Remove dummy data
 import blockContent from './blockContent';
 import crewMember from './crewMember';
 import castMember from './castMember';
 import movie from './movie';
 import person from './person';
 import screening from './screening';
-import nextStep from './nextStep';
 import plotSummary from './plotSummary';
 import plotSummaries from './plotSummaries';
+import coreProcess from './coreProcess';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -34,5 +37,6 @@ export default createSchema({
     plotSummaries,
     castMember,
     crewMember,
+    coreProcess,
   ]),
 });

@@ -3,6 +3,7 @@ export default {
   title: 'Neste steg',
   type: 'document',
   fields: [
+    // DOCUMENT META
     {
       name: 'title',
       title: 'Tittel',
@@ -67,70 +68,10 @@ export default {
 
     // CORE PROCESS
     {
-      name: 'coreProcess',
+      name: 'coreProcesses',
       title: 'Kjerneprosesser',
       type: 'array',
-      of: [
-        {
-          name: 'process',
-          title: 'Prosess',
-          type: 'object',
-          fields: [
-            {
-              name: 'title',
-              title: 'Tittel',
-              type: 'string',
-            },
-            {
-              name: 'process',
-              title: 'Prosesser',
-              type: 'array',
-              of: [
-                {
-                  name: 'processes',
-                  title: 'Prosesser',
-                  type: 'object',
-                  fields: [
-                    {
-                      name: 'processItem',
-                      title: 'Prosesspunkt',
-                      type: 'string',
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              name: 'deliveries',
-              title: 'Leveranser',
-              type: 'array',
-              of: [
-                {
-                  name: 'delivery',
-                  title: 'Leveranse',
-                  type: 'object',
-                  fields: [
-                    {
-                      name: 'deliveryItem',
-                      title: 'Leveransepunkt',
-                      type: 'string',
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              name: 'perspective',
-              title: 'Perspektiv',
-              type: 'string',
-              options: {
-                list: [{ title: 'Eier', value: 'owner' }, { title: 'Bruker', value: 'user' }],
-                layout: 'dropdown',
-              },
-            },
-          ],
-        },
-      ],
+      of: [{ type: 'coreProcess' }],
     },
 
     // MANAGEMENT PROCESS
@@ -178,6 +119,12 @@ export default {
               },
             },
           ],
+          preview: {
+            select: {
+              title: 'title',
+              subtitle: 'sustainabilityCheck',
+            },
+          },
         },
       ],
     },
