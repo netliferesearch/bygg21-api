@@ -8,6 +8,7 @@ export default {
       name: 'title',
       title: 'Tittel',
       type: 'string',
+      description: 'Fullstendig tittel på dokumentet',
     },
     {
       name: 'version',
