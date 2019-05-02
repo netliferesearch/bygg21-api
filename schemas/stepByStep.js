@@ -1,6 +1,6 @@
 export default {
-  name: 'nextStep',
-  title: 'Neste steg API',
+  name: 'stepByStep',
+  title: 'Steg for steg API',
   type: 'document',
   fields: [
     // DOCUMENT META
@@ -23,8 +23,8 @@ export default {
           fields: [
             // STEP DETAILS
             {
-              name: 'details',
-              title: 'Beskrivelse av steget',
+              name: 'stepDetails',
+              title: 'Beskrivelse av steg',
               type: 'stepDetails',
             },
 
@@ -36,20 +36,13 @@ export default {
               of: [{ type: 'coreProcess' }],
             },
 
-            // MANAGEMENT PROCESS
+            // MEETINGS
             {
-              name: 'managementProcesses',
-              title: 'Ledelsesprosesser',
+              name: 'meetings',
+              title: 'Er det krav om møte etter leveransen?',
+              description: 'Feks oppstartsmøte mellom steg 1 og 2',
               type: 'array',
-              of: [{ type: 'managementProcess' }],
-            },
-
-            // DELIVERY
-            {
-              name: 'deliveryFail',
-              title: 'Feil ved overlevering?',
-              description: 'Gå tilbake til steg 1 ved feil',
-              type: 'boolean',
+              of: [{ type: 'meeting' }],
             },
           ],
           preview: {
