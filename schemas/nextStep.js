@@ -27,6 +27,9 @@ export default {
       name: 'step',
       title: 'Steg',
       type: 'array',
+      options: {
+        editModal: 'fullscreen',
+      },
       of: [
         {
           name: 'step',
