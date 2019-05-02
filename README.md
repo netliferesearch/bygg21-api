@@ -28,7 +28,7 @@ Get all data about "Neste steg":
 https://q2a6l50y.api.sanity.io/v1/data/query/metier-test?query=*[_type=="nextStep"]
 
 Get all data about "Neste steg", but limit to Step info (number, title and description):
-https://q2a6l50y.api.sanity.io/v1/data/query/metier-test?query=*[_type=="nextStep"]{step[]{stepNumber,stepTitle, stepDescription}}
+https://q2a6l50y.api.sanity.io/v1/data/query/metier-test?query=*[_type=="nextStep"]{steps[]{details{number,title,description}}}
 
 How to GRQO queries:<br>
 https://www.sanity.io/docs/http-api/http-query
