@@ -51,7 +51,7 @@ export default {
       title: 'Perspektiv',
       type: 'string',
       options: {
-        list: [{ title: 'Eier', value: 'owner' }, { title: 'Bruker', value: 'user' }],
+        list: [{ title: 'Eier', value: 'owner' }, { title: 'Bruker', value: 'user' }, { title: 'Utøvende', value: 'executive' }, { title: 'Offentlig', value: 'public' }],
         layout: 'dropdown',
       },
     },
