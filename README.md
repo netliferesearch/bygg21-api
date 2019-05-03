@@ -9,9 +9,11 @@ The API is public and no authentication is needed. It currently contains:
 
 ## API and query examples
 
-Our API is created using [Sanity]{https://www.sanity.io/}, which exposes a traditional HTTP based REST API.
+Our API is created using [Sanity](https://www.sanity.io/), which exposes a traditional HTTP based REST API.
 
 We have a single endpoint for all data, but use a query language called [GROQ](https://www.sanity.io/docs/http-api/http-query) to give us what we want. The query language is quite simmilar to GraphQL, but with more features.
+
+### Examples
 
 Endpoint:<br>
 https://q2a6l50y.api.sanity.io/v1/data/query/metier
@@ -31,10 +33,12 @@ https://q2a6l50y.api.sanity.io/v1/data/query/metier?query=*[_type=="stepByStep"]
 Or you can get an export of all data and use as you want:<br>
 https://q2a6l50y.api.sanity.io/v1/data/export/metier
 
-Learn more about Sanitys HTTP API:<br>
+### Learn more
+
+More about Sanitys HTTP API:<br>
 https://www.sanity.io/docs/http-api/http-urls
 
-Learn how to write GRQO queries:<br>
+How to write GRQO queries:<br>
 https://www.sanity.io/docs/groq/groq-syntax
 
 A handy "Query cheat sheet":<br>
