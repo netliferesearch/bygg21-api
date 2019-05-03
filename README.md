@@ -24,16 +24,16 @@ q2a6l50y
 
 ## Query examples
 
-Get all data about "Neste steg":
+Get all data about "Neste steg":<br>
 https://q2a6l50y.api.sanity.io/v1/data/query/metier?query=*[_type=="nextStep"]
 
-Get all data about "Neste steg", but limit to Step info (number, title and description):
+Get all data about "Neste steg", but limit to Step info (number, title and description):<br>
 https://q2a6l50y.api.sanity.io/v1/data/query/metier?query=*[_type=="nextStep"]{steps[]{details{number,title,description}}}
 
-Get all data about "Steg for steg":
+Get all data about "Steg for steg":<br>
 https://q2a6l50y.api.sanity.io/v1/data/query/metier?query=*[_type=="stepByStep"]
 
-Get all data about "Steg for steg", but limit to Step info (number, title and description):
+Get all data about "Steg for steg", but limit to Step info (number, title and description):<br>
 https://q2a6l50y.api.sanity.io/v1/data/query/metier?query=*[_type=="stepByStep"]{steps[]{details{number,title,description}}}
 
 Learn how to write GRQO queries:<br>
