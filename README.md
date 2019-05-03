@@ -1,11 +1,17 @@
 # Bygg 21 API
 
+## About
+
 This repo contains Sanity Studio and Schemas (content models) for Bygg21 API.
 
-The API is public and no authentication is needed. It currently contains:
+The API is public and no authentication is needed.
+
+## Content
 
 - "Gjennomføring av bygg- og anleggsprosjekter: Neste steg"
 - "Steg for steg - veien til raskere reguleringsplan"
+
+_TODO: Write more about what the content is and how it can be used..._
 
 ## API and query examples
 
