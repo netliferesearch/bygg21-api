@@ -11,7 +11,7 @@ The API is public and no authentication is needed. It currently contains:
 
 Our API is created using [Sanity](https://www.sanity.io/), which exposes a traditional HTTP based REST API.
 
-We have a single endpoint for all data, but use a query language called [GROQ](https://www.sanity.io/docs/http-api/http-query) to give us what we want. The query language is quite simmilar to GraphQL, but with more features.
+We have a single endpoint for all data, but use a query language called [GROQ](https://www.sanity.io/docs/data-store/how-queries-work) to give us what we want. The query language is quite simmilar to GraphQL, but with more features.
 
 ### Examples
 
@@ -39,7 +39,7 @@ More about Sanitys HTTP API:<br>
 https://www.sanity.io/docs/http-api/http-urls
 
 How to write GRQO queries:<br>
-https://www.sanity.io/docs/groq/groq-syntax
+https://www.sanity.io/docs/data-store/how-queries-work
 
 A handy "Query cheat sheet":<br>
 https://www.sanity.io/docs/data-store/query-cheat-sheet
