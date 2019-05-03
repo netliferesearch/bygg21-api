@@ -49,13 +49,13 @@ https://www.sanity.io/docs/data-store/query-cheat-sheet
 Most of the data and structure should be self-describing, but a few might need an extra explanation.
 
 `documentMeta` (object)<br>
-This contains information about the document. `lastChanged` (date) and `version`(number) should be updated if the structure changes or a larger text update. Minor text changes will not change this, but be reflected in Sanitys built-in `_updatedAt`.
+This contains information about the document. `lastChanged` (date) and `version`(number) should be updated if the structure changes or on a larger text update. Minor text changes will not change this, but be reflected in Sanitys built-in `_updatedAt`.
 
 `deliveryFail` (boolean)<br>
 This means that the project should return to step 1 if the delivery fails. This is only relevant for "Neste steg / Next step".
 
 `meetings` (array)<br>
-If a step should end with a meeting (for example "Oppstartsmøte"), this array should have one item. The structure of a meeting is more or less similar to a step. This is only relevant for "Steg for steg / Step by step".
+If a step should end with a meeting (for example "Oppstartsmøte"), this array should have one item. The structure of a meeting is similar to a step. This is only relevant for "Steg for steg / Step by step".
 
 ## Get started with local development
 
@@ -66,10 +66,10 @@ If you need to make changes to the Schema (content model), this can be done loca
 - Install dependencies: `npm i`
 - Run Sanity studio: `sanity start`
 
-**Important!**
-Remember to deploy changes to Studio after makeing changes to schemas: Run `sanity deploy`.
+**Important!**<br>
+Remember to deploy changes to Studio after making changes to schemas: Run `sanity deploy`. This will probably be automatic in the future (CI).
 
-**Also important!**
+**Also important!**<br>
 Remember that even though you work locally, changes made to the content in Studio will be globally. If you need to experiment with the data, download and work on a copy of the dataset: https://www.sanity.io/docs/data-store/migrating-data
 
 ## Sanity
