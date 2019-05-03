@@ -46,15 +46,15 @@ https://www.sanity.io/docs/data-store/query-cheat-sheet
 
 ## API documentation
 
-Most of the data and structure should be self-describing, but a few might need an extra explanation:
+Most of the data and structure should be self-describing, but a few might need an extra explanation.
 
-`documentMeta` (object)
+`documentMeta` (object)<br>
 This contains information about the document. `lastChanged` (date) and `version`(number) should be updated if the structure changes or a larger text update. Minor text changes will not change this, but be reflected in Sanitys built-in `_updatedAt`.
 
-`deliveryFail` (boolean)
+`deliveryFail` (boolean)<br>
 This means that the project should return to step 1 if the delivery fails. This is only relevant for "Neste steg / Next step".
 
-`meetings` (array)
+`meetings` (array)<br>
 If a step should end with a meeting (for example "Oppstartsmøte"), this array should have one item. The structure of a meeting is more or less similar to a step. This is only relevant for "Steg for steg / Step by step".
 
 ## Get started with local development
