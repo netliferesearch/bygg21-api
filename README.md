@@ -46,18 +46,31 @@ https://www.sanity.io/docs/data-store/query-cheat-sheet
 
 ## API documentation
 
-TODO: Document non-self-describing keys from the api.
+Most of the data and structure should be self-describing, but a few might need an extra explanation:
 
-Example: "deliveryFail" (boolean) - This means that the project should return to step 1 if the delivery fails.
+`documentMeta` (object)
+This contains information about the document. `lastChanged` (date) and `version`(number) should be updated if the structure changes or a larger text update. Minor text changes will not change this, but be reflected in Sanitys built-in `_updatedAt`.
+
+`deliveryFail` (boolean)
+This means that the project should return to step 1 if the delivery fails. This is only relevant for "Neste steg / Next step".
+
+`meetings` (array)
+If a step should end with a meeting (for example "Oppstartsmøte"), this array should have one item. The structure of a meeting is more or less similar to a step. This is only relevant for "Steg for steg / Step by step".
 
 ## Get started with local development
+
+If you need to make changes to the Schema (content model), this can be done locally:
 
 - Install Sanity: `npm install -g @sanity/cli`
 - Clone this repo
 - Install dependencies: `npm i`
 - Run Sanity studio: `sanity start`
 
-**Important!** Remember to deploy changes to Studio after makeing changes to schemas: Run `sanity deploy`.
+**Important!**
+Remember to deploy changes to Studio after makeing changes to schemas: Run `sanity deploy`.
+
+**Also important!**
+Remember that even though you work locally, changes made to the content in Studio will be globally. If you need to experiment with the data, download and work on a copy of the dataset: https://www.sanity.io/docs/data-store/migrating-data
 
 ## Sanity
 
