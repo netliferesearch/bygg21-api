@@ -24,6 +24,9 @@ q2a6l50y
 
 ## Query examples
 
+Get an export of all data:<br>
+https://q2a6l50y.api.sanity.io/v1/data/export/metier
+
 Get all data about "Neste steg":<br>
 https://q2a6l50y.api.sanity.io/v1/data/query/metier?query=*[_type=="nextStep"]
 
