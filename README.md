@@ -8,12 +8,12 @@ The API is public and no authentication is needed.
 
 ## Content
 
-Our API contains simplified and structured information from two big reports:
+Our API contains simplified and structured information from the two best practise processes for how to develop a regulation plan and for how to carry out a building process:
 
 - [Gjennomføring av bygg- og anleggsprosjekter: Neste steg](https://www.bygg21.no/contentassets/ac0c77e4ec904c7a955525528b474b6c/veileder-for-fasenormen-neste-steg.pdf)
 - [Steg for steg - veien til raskere reguleringsplan](https://www.bygg21.no/rapporter-og-veiledere/steg-for-steg/)
 
-_TODO: Write more about what the content is and how it can be used..._
+Our thought is that this data might be useful to include in project managment tools for the building industry, but you may use it however you like.
 
 ## API and query examples
 
